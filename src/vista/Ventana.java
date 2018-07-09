@@ -90,7 +90,7 @@ public class Ventana extends JFrame {
         id.setBounds(140,10,ANCHOC,ALTOC);
         marca.setBounds(150,60,ANCHOC,ALTOC);
         modelo.setBounds(380,60,ANCHOC,ALTOC);
-        compania.setBounds(300,100,ANCHOC,ALTOC);
+        compania.setBounds(330,100,ANCHOC,ALTOC);
         
         buscar.setBounds(300, 10, ANCHOC, ALTOC);
         insertar.setBounds(10, 210, ANCHOC, ALTOC);
@@ -119,10 +119,10 @@ public class Ventana extends JFrame {
             }
         };
         
-        tm.addColumn(id);
-        tm.addColumn(marca);
-        tm.addColumn(modelo);
-        tm.addColumn(compania);
+        tm.addColumn("id");
+        tm.addColumn("marca");
+        tm.addColumn("modelo");
+        tm.addColumn("compania");
         
         TelefonosDao tf = new TelefonosDao();
         ArrayList<Telefonos> telefonoss = tf.readAll();

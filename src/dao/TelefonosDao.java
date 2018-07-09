@@ -135,7 +135,7 @@ public class TelefonosDao implements Metodos <Telefonos> {
             rs = s.executeQuery(SQL_READALL);
             
             while(rs.next()){
-                all.add(new Telefonos(rs.getString(1),rs.getNString(2),rs.getString(3),rs.getString(4)));
+                all.add(new Telefonos(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
             }
             rs.close();
         } catch (SQLException ex) {
