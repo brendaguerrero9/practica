@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Brenda
  * @param <Generic>
  */
-public interface Metodos <Generic> {
+public interface Dao <Generic> {
      public boolean create (Generic g);
      public boolean delete (Object key);
      public boolean update (Generic c);

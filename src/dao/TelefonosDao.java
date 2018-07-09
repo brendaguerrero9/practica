@@ -6,7 +6,6 @@
 package dao;
 
 import conexion.Conexion;
-import interfaz.Metodos;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,12 +14,13 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import modelo.Telefonos;
+import interfaz.Dao;
 
 /**
  *
  * @author Brenda
  */
-public class TelefonosDao implements Metodos <Telefonos> {
+public class TelefonosDao implements Dao <Telefonos> {
 
     private static final String SQL_INSERT = "INSERT INTO telefon (id,marca,modelo,compania) VALUES (?,?,?,?)";
     private static final String SQL_UPDATE = "UPDATE telefon SET marca = ?, modelo = ?,compania = ? WHERE id = ?";
